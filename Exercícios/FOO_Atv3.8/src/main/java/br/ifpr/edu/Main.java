@@ -1,14 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.ifpr.edu;
 
-/**
- *
- * @author Silvia
- */
 public class Main {
-    
+    public static void main(String[] args) {
+
+        BotaoQuadrado quadrado = new BotaoQuadrado();
+        quadrado.desenheQuadrado(2, 3);
+        quadrado.desenhe("Azul");
+        quadrado.aperte(0);
+        quadrado.mova(0);
+        quadrado.imprimir();
+
+        BotaoRedondo redondo = new BotaoRedondo();
+        redondo.desenheRedondo(5);
+        redondo.desenhe("Vermelho");
+        redondo.aperte(1);
+        redondo.mova(1);
+        redondo.imprimir();
+    }
 }
